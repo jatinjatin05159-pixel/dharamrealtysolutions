@@ -1,4 +1,4 @@
-import { Hop as Home, Building2, Key, TrendingUp, Shield, Users } from "lucide-react"
+import { Home, Building2, Key, TrendingUp, Shield, Users } from "lucide-react"
 import Link from "next/link"
 
 const services = [

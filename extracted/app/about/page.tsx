@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { Award, Users, Target, Heart, CircleCheck as CheckCircle } from "lucide-react"
+import { Award, Users, Target, Heart, CheckCircle } from "lucide-react"
 
 const values = [
   {
