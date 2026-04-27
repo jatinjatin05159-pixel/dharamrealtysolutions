@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { Home, Building2, Key, TrendingUp, Shield, Users, FileText, Search, Handshake, Phone, MessageCircle } from "lucide-react"
+import { Hop as Home, Building2, Key, TrendingUp, Shield, Users, FileText, Search, Handshake, Phone, MessageCircle } from "lucide-react"
 
 const services = [
   {
