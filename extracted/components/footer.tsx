@@ -100,7 +100,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-[#1e3a68]">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white/50 text-sm">
-              © {new Date().getFullYear()} Dharam Realty Solution. All rights reserved.
+              © {new Date().getFullYear()} Dharam o Realty Solution. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               <Link href="/privacy" className="text-white/50 hover:text-[#d4a853] transition-colors text-sm">
