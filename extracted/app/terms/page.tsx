@@ -23,7 +23,7 @@ export default function TermsPage() {
               <div>
                 <h2 className="text-xl font-bold text-white mb-3">2. Nature of Information</h2>
                 <p>All content on this website — including property descriptions, service details, and other information — is provided for general informational purposes only. It does not constitute legal, financial, or professional advice of any kind.</p>
-                <p className="mt-3">Property details, availability, and pricing are subject to change without notice. Visitors are advised to independently verify all information and consult appropriate professionals before making any property related decisions. Dharam Realty Solution shall not be held liable for any decisions made based solely on information presented on this website.</p>
+                <p className="mt-3">Property details, availability, and pricing are subject to change without notice. Visitors are advised to independently verify all information and consult appropriate professionals before making any property related decisions. Dharam o Realty Solution shall not be held liable for any decisions made based solely on information presented on this website.</p>
               </div>
 
               <div>
