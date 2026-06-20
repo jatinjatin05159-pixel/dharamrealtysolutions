@@ -12,7 +12,7 @@ export function Footer() {
             <Link href="/">
               <Image
                 src="/images/logo.png"
-                alt="Dharam Realty Solutions"
+                alt="Dharam o Realty Solutions"
                 width={150}
                 height={60}
                 className="h-[60px] w-auto object-contain"
