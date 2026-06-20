@@ -17,7 +17,7 @@ export default function TermsPage() {
 
               <div>
                 <h2 className="text-xl font-bold text-white mb-3">1. Acceptance of Terms</h2>
-                <p>By accessing or using the Dharam Realty Solution website, you confirm that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree, please refrain from using this website. By using this site, you also confirm that you are at least 18 years of age.</p>
+                <p>By accessing or using the Dharam o Realty Solution website, you confirm that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree, please refrain from using this website. By using this site, you also confirm that you are at least 18 years of age.</p>
               </div>
 
               <div>
@@ -28,7 +28,7 @@ export default function TermsPage() {
 
               <div>
                 <h2 className="text-xl font-bold text-white mb-3">3. Our Role as Consultants</h2>
-                <p>Dharam Realty Solution operates as a real estate consultancy. We facilitate connections between buyers, sellers, and property owners. We are not a party to any final transaction and are not responsible for outcomes arising from agreements made between clients and property owners.</p>
+                <p>Dharamo o Realty Solution operates as a real estate consultancy. We facilitate connections between buyers, sellers, and property owners. We are not a party to any final transaction and are not responsible for outcomes arising from agreements made between clients and property owners.</p>
               </div>
 
               <div>
@@ -38,12 +38,12 @@ export default function TermsPage() {
 
               <div>
                 <h2 className="text-xl font-bold text-white mb-3">5. Intellectual Property</h2>
-                <p>All content on this website, including text, images, logo, and design, is the property of Dharam Realty Solution and is protected under applicable Indian intellectual property laws. You may not reproduce, distribute, or use any content without our prior written consent.</p>
+                <p>All content on this website, including text, images, logo, and design, is the property of Dharam o Realty Solution and is protected under applicable Indian intellectual property laws. You may not reproduce, distribute, or use any content without our prior written consent.</p>
               </div>
 
               <div>
                 <h2 className="text-xl font-bold text-white mb-3">6. Limitation of Liability</h2>
-                <p>To the fullest extent permitted by law, Dharam Realty Solution shall not be liable for any direct, indirect, or consequential loss arising from your use of this website or reliance on its content. Use of this website is entirely at your own risk.</p>
+                <p>To the fullest extent permitted by law, Dharam o Realty Solution shall not be liable for any direct, indirect, or consequential loss arising from your use of this website or reliance on its content. Use of this website is entirely at your own risk.</p>
               </div>
 
               <div>
