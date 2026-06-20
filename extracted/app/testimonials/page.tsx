@@ -37,7 +37,7 @@ export default function TestimonialsPage() {
             </h1>
             <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
               Don&apos;t just take our word for it. Here&apos;s what our satisfied clients 
-              have to say about their experience with Dharam Realty Solution.
+              have to say about their experience with Dharam o Realty Solution.
             </p>
           </div>
         </div>
