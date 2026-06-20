@@ -17,7 +17,7 @@ export default function PrivacyPage() {
 
               <div>
                 <h2 className="text-xl font-bold text-white mb-3">1. Our Commitment to Privacy</h2>
-                <p>At Dharam Realty Solution, we value the trust you place in us when you share your personal information. Whether you are exploring our services, submitting an enquiry, or simply browsing our website, we are committed to handling your information responsibly and in accordance with applicable Indian privacy laws, including the Digital Personal Data Protection Act, 2023.</p>
+                <p>At Dharam o Realty Solution, we value the trust you place in us when you share your personal information. Whether you are exploring our services, submitting an enquiry, or simply browsing our website, we are committed to handling your information responsibly and in accordance with applicable Indian privacy laws, including the Digital Personal Data Protection Act, 2023.</p>
                 <p className="mt-3">By using this website, you agree to the terms outlined in this Privacy Policy. We reserve the right to update this policy periodically, and we encourage you to review it from time to time.</p>
               </div>
 
