@@ -54,7 +54,7 @@ export default function AboutPage() {
               Our Story
             </h2>
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              Dharam Realty Solution was founded in 2026. While the company is new, our founder brings over 11 years of personal experience in Bangalore's real estate market — having worked across residential, commercial, and land transactions across the city.
+              Dharam o Realty Solution was founded in 2026. While the company is new, our founder brings over 11 years of personal experience in Bangalore's real estate market — having worked across residential, commercial, and land transactions across the city.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
               We are committed to providing honest, transparent, and personalized real estate guidance to every client — whether you are buying, selling, or investing in property across Bangalore.
