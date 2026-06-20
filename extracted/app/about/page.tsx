@@ -37,7 +37,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white font-serif mb-6">
-              About <span className="text-[#c9a84c]">Dharam Realty Solution</span>
+              About <span className="text-[#c9a84c]">Dharam o Realty Solution</span>
             </h1>
             <p className="text-xl text-gray-300">
               New Company, Proven Experience
