@@ -1,7 +1,48 @@
+"use client"
+
 import { Phone, MessageCircle } from "lucide-react"
-import Link from "next/link"
+import { useState } from "react"
 
 export function ContactCTA() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    interest: "",
+    message: "",
+  })
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle")
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setStatus("submitting")
+
+    try {
+      const response = await fetch("https://formspree.io/f/mgojwjap", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setStatus("success")
+        setFormData({ name: "", phone: "", interest: "", message: "" })
+      } else {
+        setStatus("error")
+      }
+    } catch {
+      setStatus("error")
+    }
+  }
+
   return (
     <section className="py-20 md:py-28 bg-[#0a1628]">
       <div className="container mx-auto px-4">
@@ -59,49 +100,87 @@ export function ContactCTA() {
                 </div>
               </div>
 
-              {/* Contact Form Preview */}
+              {/* Contact Form */}
               <div className="bg-[#0a1628]/80 backdrop-blur rounded-2xl p-8 border border-[#1e3a68]">
                 <h3 className="text-xl font-semibold text-white mb-6 font-serif">
                   Send Us a Message
                 </h3>
-                <form className="space-y-4">
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Your Name"
-                      className="w-full px-4 py-3 rounded-xl bg-[#162d54] border border-[#1e3a68] text-white placeholder:text-white/40 focus:outline-none focus:border-[#d4a853] transition-colors"
-                    />
+
+                {status === "success" ? (
+                  <div className="text-center py-8">
+                    <p className="text-[#d4a853] text-lg font-semibold mb-2">
+                      Message sent successfully!
+                    </p>
+                    <p className="text-white/70">
+                      We&apos;ll get back to you shortly.
+                    </p>
                   </div>
-                  <div>
-                    <input
-                      type="tel"
-                      placeholder="Phone Number"
-                      className="w-full px-4 py-3 rounded-xl bg-[#162d54] border border-[#1e3a68] text-white placeholder:text-white/40 focus:outline-none focus:border-[#d4a853] transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <select className="w-full px-4 py-3 rounded-xl bg-[#162d54] border border-[#1e3a68] text-white/40 focus:outline-none focus:border-[#d4a853] transition-colors">
-                      <option value="">I&apos;m interested in...</option>
-                      <option value="buying">Buying Property</option>
-                      <option value="selling">Selling Property</option>
-                      <option value="renting">Renting Property</option>
-                      <option value="other">Other Inquiry</option>
-                    </select>
-                  </div>
-                  <div>
-                    <textarea
-                      placeholder="Your Message"
-                      rows={4}
-                      className="w-full px-4 py-3 rounded-xl bg-[#162d54] border border-[#1e3a68] text-white placeholder:text-white/40 focus:outline-none focus:border-[#d4a853] transition-colors resize-none"
-                    />
-                  </div>
-                  <Link
-                    href="/contact"
-                    className="w-full block text-center bg-[#d4a853] hover:bg-[#e5be6a] text-[#0a1628] px-6 py-4 rounded-xl font-semibold transition-colors"
-                  >
-                    Send Message
-                  </Link>
-                </form>
+                ) : (
+                  <form onSubmit={handleSubmit} className="space-y-4">
+                    <div>
+                      <input
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="Your Name"
+                        required
+                        className="w-full px-4 py-3 rounded-xl bg-[#162d54] border border-[#1e3a68] text-white placeholder:text-white/40 focus:outline-none focus:border-[#d4a853] transition-colors"
+                      />
+                    </div>
+                    <div>
+                      <input
+                        type="tel"
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleChange}
+                        placeholder="Phone Number"
+                        required
+                        className="w-full px-4 py-3 rounded-xl bg-[#162d54] border border-[#1e3a68] text-white placeholder:text-white/40 focus:outline-none focus:border-[#d4a853] transition-colors"
+                      />
+                    </div>
+                    <div>
+                      <select
+                        name="interest"
+                        value={formData.interest}
+                        onChange={handleChange}
+                        required
+                        className="w-full px-4 py-3 rounded-xl bg-[#162d54] border border-[#1e3a68] text-white/80 focus:outline-none focus:border-[#d4a853] transition-colors"
+                      >
+                        <option value="">I&apos;m interested in...</option>
+                        <option value="buying">Buying Property</option>
+                        <option value="selling">Selling Property</option>
+                        <option value="renting">Renting Property</option>
+                        <option value="other">Other Inquiry</option>
+                      </select>
+                    </div>
+                    <div>
+                      <textarea
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        placeholder="Your Message"
+                        rows={4}
+                        required
+                        className="w-full px-4 py-3 rounded-xl bg-[#162d54] border border-[#1e3a68] text-white placeholder:text-white/40 focus:outline-none focus:border-[#d4a853] transition-colors resize-none"
+                      />
+                    </div>
+
+                    {status === "error" && (
+                      <p className="text-red-400 text-sm">
+                        Something went wrong. Please try again or call us directly.
+                      </p>
+                    )}
+
+                    <button
+                      type="submit"
+                      disabled={status === "submitting"}
+                      className="w-full block text-center bg-[#d4a853] hover:bg-[#e5be6a] disabled:opacity-60 text-[#0a1628] px-6 py-4 rounded-xl font-semibold transition-colors"
+                    >
+                      {status === "submitting" ? "Sending..." : "Send Message"}
+                    </button>
+                  </form>
+                )}
               </div>
             </div>
           </div>
