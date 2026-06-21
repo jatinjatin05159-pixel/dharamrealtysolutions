@@ -88,7 +88,7 @@ export default function ContactPage() {
                 <Mail className="h-6 w-6 text-[#c9a84c] mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="text-white font-bold mb-1">Email</h3>
-                  <p className="text-gray-300">info@dharamrealtysolutions.com</p>
+                  <p className="text-gray-300">contact@dharamorealtysolutions.com</p>
                 </div>
               </div>
               <div className="bg-[#0d1f3c] rounded-xl p-6 flex items-start gap-4">
