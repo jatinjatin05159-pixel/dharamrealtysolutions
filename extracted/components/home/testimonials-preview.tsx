@@ -33,7 +33,7 @@ export function TestimonialsPreview() {
           </h2>
           <p className="text-white/70 max-w-2xl mx-auto text-lg">
             Don&apos;t just take our word for it. Here&apos;s what our satisfied clients 
-            have to say about their experience with Dharam Realty Solution.
+            have to say about their experience with Dharamo Realty Solution.
           </p>
         </div>
 
