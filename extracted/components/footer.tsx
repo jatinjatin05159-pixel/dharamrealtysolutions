@@ -71,7 +71,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#d4a853] flex-shrink-0 mt-0.5" />
                 <span className="text-white/70 text-sm">
-                  Bangalore, Karnataka
+                  10/25 4TH FLOOR RICHMOND PLAZA BUILDING RICHMOND ROAD BANGALORE KARNATAKA - 560025
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -83,7 +83,7 @@ export function Footer() {
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[#d4a853] flex-shrink-0" />
                 <a href="mailto:dharamrealtysolutions@gmail.com" className="text-white/70 hover:text-[#d4a853] transition-colors text-sm">
-                  dharamrealtysolutions@gmail.com
+                  contact@dharamorealtysolutions.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
