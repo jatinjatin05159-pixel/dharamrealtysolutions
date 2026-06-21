@@ -95,7 +95,7 @@ export default function ContactPage() {
                 <MapPin className="h-6 w-6 text-[#c9a84c] mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="text-white font-bold mb-1">Location</h3>
-                  <p className="text-gray-300">Bangalore, Karnataka, India</p>
+                  <p className="text-gray-300">10/25 4TH FLOOR RICHMOND PLAZA BUILDING RICHMOND ROAD BANGALORE - 560025</p>
                 </div>
               </div>
             </div>
