@@ -7,6 +7,7 @@ export function ContactCTA() {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
+    email: "",
     interest: "",
     message: "",
   })
@@ -34,7 +35,7 @@ export function ContactCTA() {
 
       if (response.ok) {
         setStatus("success")
-        setFormData({ name: "", phone: "", interest: "", message: "" })
+        setFormData({ name: "", phone: "", email: "", interest: "", message: "" })
       } else {
         setStatus("error")
       }
@@ -135,6 +136,17 @@ export function ContactCTA() {
                         value={formData.phone}
                         onChange={handleChange}
                         placeholder="Phone Number"
+                        required
+                        className="w-full px-4 py-3 rounded-xl bg-[#162d54] border border-[#1e3a68] text-white placeholder:text-white/40 focus:outline-none focus:border-[#d4a853] transition-colors"
+                      />
+                    </div>
+                    <div>
+                      <input
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        placeholder="Email Address"
                         required
                         className="w-full px-4 py-3 rounded-xl bg-[#162d54] border border-[#1e3a68] text-white placeholder:text-white/40 focus:outline-none focus:border-[#d4a853] transition-colors"
                       />
