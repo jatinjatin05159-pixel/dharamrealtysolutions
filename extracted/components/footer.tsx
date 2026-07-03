@@ -11,7 +11,7 @@ export function Footer() {
           <div className="space-y-6">
             <Link href="/">
               <Image
-                src="/images/logo.png"
+                src="/logo-dark.png"
                 alt="Dharam o Realty Solutions"
                 width={150}
                 height={60}
