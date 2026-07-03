@@ -28,9 +28,9 @@ export function Navbar() {
             <Image
               src="/logo-dark.png"
               alt="Dharam O Realty Solutions"
-              width={175}
-              height={70}
-              className="h-[70px] w-auto object-contain"
+              width={220}
+              height={88}
+              className="h-[88px] w-auto object-contain"
               priority
             />
           </Link>
