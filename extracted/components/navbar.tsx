@@ -26,7 +26,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/Dharam O Realty Solutions final files.png"
+              src="/logo-dark.png"
               alt="Dharam O Realty Solutions"
               width={175}
               height={70}
