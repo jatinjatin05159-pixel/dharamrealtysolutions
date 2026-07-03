@@ -13,9 +13,9 @@ export function Footer() {
               <Image
                 src="/logo-dark.png"
                 alt="Dharam o Realty Solutions"
-                width={150}
-                height={60}
-                className="h-[60px] w-auto object-contain"
+                width={190}
+                height={76}
+                className="h-[76px] w-auto object-contain"
               />
             </Link>
             <p className="text-white/70 text-sm leading-relaxed">
